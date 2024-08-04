@@ -25,20 +25,64 @@ body {
 .login {
     position: absolute;
     vertical-align: top;
-    width: 28%;
+    width: 30%;
+    margin-left: 55px;
+    margin-right: 55px;
 }
 
 .login h1 {
     font-size: 45px;
-    padding-left: 55px;
     padding-top: 30px;
     font-family: Quincy;
 }
 
-.login p {
+.login p, h4 {
     font-size: 15px;
-    padding-left: 55px;
+    color: #787e7e;
     font-family: Playfair Display;
+}
+
+.login p {
+    margin-top: -20px;
+}
+
+.login h4 {
+    margin-top: 7%;
+}
+
+input {
+    font-size: 17.5px;
+    font-family: Playfair Display; /* not bold dapat */
+    width: 100%;
+    height: 15px;
+    padding-left: 10px;
+    padding-bottom: 19px;
+    padding-top: 21px;
+    margin-top: -15px;
+}
+
+.password {
+    margin-top: -10px;
+}
+
+.forgot {
+    text-align: right;
+    margin-right: -15px;
+    margin-top: -5px;
+}
+
+.login-button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: -15px;
+}
+
+button {
+    background-color: #506a2c;
+    font-size: 18px;
+    font-family: Quincy;
+    color: #f6f6f6;
+    width: 100%;
 }
 
 
