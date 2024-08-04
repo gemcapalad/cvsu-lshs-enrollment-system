@@ -1,0 +1,54 @@
+html, body {
+    height: 99%;
+}
+
+body {
+    background-color: #e8e8e8;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%
+}
+
+.right-side {
+    position: fixed;
+    width: 50%;
+    height: 768.75px;
+    float: right;
+    padding-left: 50%;
+}
+
+.login {
+    position: absolute;
+    vertical-align: top;
+    width: 28%;
+}
+
+.login h1 {
+    font-size: 45px;
+    padding-left: 55px;
+    padding-top: 30px;
+    font-family: Quincy;
+}
+
+.login p {
+    font-size: 15px;
+    padding-left: 55px;
+    font-family: Playfair Display;
+}
+
+
+
+@font-face {
+    font-family: Quincy;
+    src: url('assets/fonts/quincycf-bold.otf');
+}
+
+@font-face {
+    font-family: Playfair Display;
+    src: url('assets/fonts/playfairdisplay-bold.ttf');
+}
