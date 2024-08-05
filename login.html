@@ -5,14 +5,14 @@
         <meta charset="UTF-8">
         <title>CvSU-LSHS Online Enrollment System</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="login-script.js"></script>
+        <script type="text/javascript" src="login-script.js" defer></script>
     </head>
 
     <body>
         <div class="main">
             <img src="assets/img/main.png" width="1212.5px" height="768.75px">
             <div class="right-side">
-                <form>
+                <form id="login-form">
                     <div class="login">
                         <h1>Login</h1>
                         <p>Welcome to the Cavite State University Laboratory Science High School Enrollment System. Please login to your account.</p>
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div class="login-button">
-                            <button type="button" onclick="loginError(); stopReload()">Login</button>
+                            <button>Login</button>
                         </div>
                     </form>
                 </div>
