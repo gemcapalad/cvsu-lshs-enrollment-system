@@ -62,7 +62,7 @@ input {
     box-sizing: border-box;
 }
 
-.password {
+#password {
     margin-top: -10px;
 }
 
