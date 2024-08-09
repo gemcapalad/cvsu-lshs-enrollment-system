@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html, body {
     height: 99%;
 }
@@ -151,3 +152,158 @@ button:hover {
     font-family: 'Playfair Display Regular';
     src: url('assets/fonts/playfairdisplay-regular.ttf');
 }
+=======
+html, body {
+    height: 99%;
+}
+
+body {
+    background-color: #e8e8e8;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.right-side {
+    position: fixed;
+    width: 1000px;
+    height: 768.75px;
+    float: right;
+    padding-left: 1000px;
+}
+
+.login {
+    position: absolute;
+    vertical-align: top;
+    width: 25%;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.login h1 {
+    font-size: 45px;
+    padding-top: 30px;
+    font-family: "Quincy Bold";
+}
+
+.login p, h4 {
+    font-size: 15px;
+    color: #787e7e;
+    font-family: "Playfair Display Bold";
+}
+
+.login p {
+    margin-top: -20px;
+}
+
+.login h4 {
+    margin-top: 7%;
+}
+
+input {
+    font-size: 17.5px;
+    font-family: 'Playfair Display Regular'; /* not bold dapat */
+    width: 100%;
+    height: 15px;
+    padding-left: 10px;
+    padding-bottom: 24px;
+    padding-top: 26px;
+    margin-top: -15px;
+    box-sizing: border-box;
+    border-width: thin;
+}
+
+#pw-input-box {
+    margin-top: -15px;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#invalid {
+    position: relative;
+    flex-grow: 1;
+    margin-top: -17px;
+    visibility: hidden;
+}
+
+#invalid h4 {
+    color: #ff3131;
+}
+
+.forgot {
+    position: relative;
+    flex-shrink: 0;
+    margin-left: 10px;
+    text-align: right;
+}
+
+#forgot-button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+#the-button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: -15px;
+}
+
+button {
+    background-color: #506a2c;
+    font-size: 18px;
+    font-family: 'Quincy Bold';
+    color: #f6f6f6;
+    width: 100%;
+    padding: 12.5px 45px;
+    margin-top: 200px;
+    border-width: thin;
+}
+
+#submit-button {
+    display: none;
+}
+
+#ok-button {
+    display: none;
+}
+
+button:hover {
+    background-color: #8bab30;
+}
+
+#with-space {
+    padding-bottom: 20px;
+}
+
+#email-box {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Quincy Bold';
+    src: url('assets/fonts/quincycf-bold.otf');
+}
+
+@font-face {
+    font-family: 'Playfair Display Bold';
+    src: url('assets/fonts/playfairdisplay-bold.ttf');
+}
+
+@font-face {
+    font-family: 'Playfair Display Regular';
+    src: url('assets/fonts/playfairdisplay-regular.ttf');
+}
+>>>>>>> f3743eb6c098dd58d6d3252394efe15294f5c241
