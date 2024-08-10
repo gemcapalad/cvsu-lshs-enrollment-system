@@ -22,18 +22,21 @@ function formValidation() {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
         const email = document.getElementById("email").value;
-        const ok = document.getElementById("ok-button");
 
 
         if (email) {
             finalPassword = email;
             resetComplete();
-        } else if (ok.style.display == 'block') {
-            enterButton();
-        } else if (username == "202202371" && password == finalPassword){
+        } else if (username == "202202371" && password == finalPassword) {
             alert("Login successful!");
             location.reload();
         } else {
+            loginError();
+        }
+    });
+
+    document.addEventListener("keypress", function(event) {
+        if (event.key == "Enter" && window.getComputedStyle(document.getElementById("ok-button").getPropertyValue("display")) == 'none') { 
             loginError();
         }
     });
@@ -43,6 +46,14 @@ function enterButton() {
     document.addEventListener("keypress", function(event) {
         if (event.key == "Enter") {
             reload();
+        }
+    });
+}
+
+function onkeyPress() {
+    document.addEventListener("keypress", function(event) {
+        if (event.key == "Enter") {
+            loginError();
         }
     });
 }
@@ -79,8 +90,9 @@ function forgotPassword() {
     description.innerHTML = '<p id="with-space">Please enter your email address to reset your password.</p>'
     inputBox[0].style["display"] = 'none';
     inputBox[1].style["visibility"] = 'hidden';
-    emailBox.style.display = 'block'
-    document.getElementById("invalid").style.visibility = 'hidden'
+    emailBox.style.display = 'block';
+    emailBox.style.borderColor = '#000000';
+    document.getElementById("invalid").style.visibility = 'hidden';
     document.getElementById("forgot-button").style.visibility = 'hidden';
     button[0].style["display"] = 'none';
     document.getElementById("submit-button").style.display = 'block';
@@ -103,6 +115,6 @@ function resetComplete() {
 }
 
 function reload() {
-    alert("Returning to login screen...")
+    alert("Returning to login page...")
     location.reload();
 }
